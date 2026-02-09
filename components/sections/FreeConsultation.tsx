@@ -2,7 +2,7 @@
 import React, { useRef, useState } from 'react';
 
 export const FreeConsultation = () => {
-    const whatsappLink = "https://l1nk.dev/hubbb";
+    const whatsappLink = "https://wa.link/86hf6m";
     const videoRef = useRef<HTMLVideoElement>(null);
     const [isPlaying, setIsPlaying] = useState(false);
 

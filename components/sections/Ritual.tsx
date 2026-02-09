@@ -1,7 +1,7 @@
 import { CheckCircle2 } from 'lucide-react';
 
 export const Ritual = () => {
-    const whatsappLink = "https://l1nk.dev/hubbb";
+    const whatsappLink = "https://wa.link/86hf6m";
 
     return (
         <section className="py-24 bg-[#150c1f] relative border-y border-[#d4af37]/20">

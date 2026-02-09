@@ -3,7 +3,7 @@ import React from 'react';
 import { WhatsAppIcon } from '../ui/WhatsAppIcon';
 
 export const Footer = () => {
-    const whatsappLink = "https://l1nk.dev/hubbb";
+    const whatsappLink = "https://wa.link/86hf6m";
 
     return (
         <footer className="bg-[#050208] pt-20 pb-10 border-t border-[#d4af37]/20">

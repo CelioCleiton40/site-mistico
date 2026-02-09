@@ -12,8 +12,11 @@ import { LoveUnion } from '@/components/sections/LoveUnion';
 import { Testimonials } from '@/components/sections/Testimonials';
 import { Gallery } from '@/components/sections/Gallery';
 import { Footer } from '@/components/sections/Footer';
+import { WhatsAppFloatingButton } from '@/components/ui/WhatsAppFloatingButton';
 
 const App = () => {
+  const whatsappLink = "https://wa.link/86hf6m";
+
   return (
     <div className="min-h-screen bg-[#0a0510] text-gray-100 font-sans selection:bg-[#d4af37] selection:text-black overflow-x-hidden">
       <Header />
@@ -27,6 +30,7 @@ const App = () => {
       <Testimonials />
       <Gallery />
       <Footer />
+      <WhatsAppFloatingButton href={whatsappLink} />
     </div>
   );
 };

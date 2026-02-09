@@ -3,7 +3,7 @@ import React from 'react';
 import { Sparkles } from 'lucide-react';
 
 export const Hero = () => {
-    const whatsappLink = "https://l1nk.dev/hubbb";
+    const whatsappLink = "https://wa.link/86hf6m";
 
     return (
         <header className="relative min-h-screen flex items-center justify-center overflow-hidden mandala-bg">
