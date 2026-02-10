@@ -2,7 +2,7 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = 'https://mediumvitoriaprado.com.br';
+    const baseUrl = 'https://escudodoamor.com.br';
 
     return {
         rules: {

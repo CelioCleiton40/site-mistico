@@ -2,7 +2,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://mediumvitoriaprado.com.br';
+    const baseUrl = 'https://escudodoamor.com.br';
 
     return [
         {

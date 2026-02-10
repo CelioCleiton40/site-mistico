@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://escudodoamor.com.br"),
   title: {
-    default: "Medium Vitória Prado - Ritual Chora Nos Meus Pés | Amarração Amorosa",
+    default: "Medium Vitória Prado - Escudo do Amor - Recupere seu amor e equilíbrio espiritual | Amarração Amorosa",
     template: "%s | Medium Vitória Prado"
   },
   description: "Especialista em Amarração Amorosa, União de Casais e Consultas Espirituais. Há mais de 20 anos ajudando a recuperar o amor e o equilíbrio energético com sigilo absoluto.",
@@ -30,7 +31,9 @@ export const metadata: Metadata = {
     "Limpeza Espiritual",
     "Astrologia",
     "Medium Vitória Prado",
-    "Ritual Chora Nos Meus Pés"
+    "Escudo do Amor",
+    "Recupere seu amor", 
+    "e equilíbrio espiritual"
   ],
   authors: [{ name: "Vitória Prado" }],
   creator: "Vitória Prado",
@@ -40,11 +43,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Medium Vitória Prado - Ritual Chora Nos Meus Pés",
-    description: "Recupere seu amor e equilíbrio espiritual com a Medium Vitória Prado. Especialista em Amarração Amorosa e União de Casais.",
-    url: "https://mediumvitoriaprado.com.br",
-    siteName: "Medium Vitória Prado",
+    title: "Escudo do Amor - Recupere seu amor e equilíbrio espiritual",
+    description: "Recupere seu amor e equilíbrio espiritual com o Escudo do Amor. Especialista em Amarração Amorosa e União de Casais.",
+    url: "https://escudodoamor.com.br",
+    siteName: "Escudo do Amor",
     images: [
       {
         url: "/FOTO Vitoria Prado.webp",
@@ -58,7 +64,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Medium Vitória Prado - Ritual Chora Nos Meus Pés",
+    title: "Escudo do Amor - Recupere seu amor e equilíbrio espiritual",
     description: "Especialista em Amarração Amorosa e União de Casais. Recupere seu amor hoje.",
     images: ["/FOTO Vitoria Prado.webp"],
   },
@@ -73,6 +79,46 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "verification_token", // Substituir pelo token real do Google Search Console
+  },
+  category: "spirituality",
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Medium Vitória Prado - Escudo do Amor",
+  "image": "https://escudodoamor.com.br/FOTO Vitoria Prado.webp",
+  "description": "Especialista em Amarração Amorosa, União de Casais e Consultas Espirituais.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "BR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -23.550520,
+    "longitude": -46.633308
+  },
+  "url": "https://escudodoamor.com.br",
+  "telephone": "+5519994451358",
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  ]
 };
 
 export default function RootLayout({
@@ -81,10 +127,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Script
+          id="json-ld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17810019933"
           strategy="afterInteractive"
