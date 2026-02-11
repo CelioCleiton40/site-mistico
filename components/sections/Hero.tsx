@@ -29,12 +29,12 @@ export const Hero = () => {
                 </div>
 
                 <h1 className="font-mystic text-4xl md:text-6xl lg:text-7xl text-white leading-tight mb-6 tracking-wide drop-shadow-2xl">
-                    Ajudo Você<br />
-                    <span className="text-gold font-bold">A Transformar Amor e Destino com Espiritualidade</span>
+                    Seu relacionamento mudou e você não sabe o que fazer?<br />
+                    <span className="text-gold font-bold">Distanciamento, brigas constantes, término inesperado...</span>
                 </h1>
 
                 <p className="font-body text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-10 font-light tracking-wide leading-relaxed">
-                    Consultas personalizadas para união amorosa, abertura de caminhos, harmonização espiritual e proteção energética.
+                    Nem sempre o fim significa que acabou de vez. Antes de desistir, é importante entender o que realmente está acontecendo.
                 </p>
 
                 <a
@@ -42,7 +42,7 @@ export const Hero = () => {
                     className="inline-flex items-center gap-3 bg-gold-gradient text-[#0a0510] px-10 py-4 rounded-full font-mystic font-bold text-lg hover:transform hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(212,175,55,0.4)]"
                 >
                     <Sparkles className="animate-spin-slow" />
-                    QUERO AGENDAR AGORA
+                    FALAR AGORA NO WHATSAPP
                     <Sparkles className="animate-spin-slow" />
                 </a>
             </div>

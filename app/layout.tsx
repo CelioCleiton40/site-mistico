@@ -147,10 +147,10 @@ export default function RootLayout({
             gtag('js', new Date());
 
             gtag('config', 'AW-17810019933');
-
-            // 🔥 CONVERSÃO DE VISUALIZAÇÃO DE PÁGINA
             gtag('event', 'conversion', {
-              send_to: 'AW-17810019933/aUIPCMi6-NIbEN2svaxC'
+              'send_to': 'AW-17944799800/QAmlCKOkkvYbELjU3-xC',
+              'value': 1.0,
+              'currency': 'BRL'
             });
           `}
         </Script>
