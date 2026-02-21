@@ -137,7 +137,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17810019933"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17960291369"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -146,9 +146,9 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'AW-17810019933');
+            gtag('config', 'AW-17960291369');
             gtag('event', 'conversion', {
-              'send_to': 'AW-17944799800/QAmlCKOkkvYbELjU3-xC',
+              'send_to': '17960291369/QAmlCKOkkvYbELjU3-xC',
               'value': 1.0,
               'currency': 'BRL'
             });
