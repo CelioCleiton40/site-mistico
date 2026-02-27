@@ -128,35 +128,44 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Script
-          id="json-ld"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17966552736"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+  <body
+    className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+  >
 
-            gtag('config', 'AW-17966552736');
-            gtag('event', 'conversion', {
-              'send_to': '17966552736/QAmlCKOkkvYbELjU3-xC',
-              'value': 1.0,
-              'currency': 'BRL'
-            });
-          `}
-        </Script>
+    {/* Google Tag Manager (noscript) */}
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KRVF98MH"
+        height="0"
+        width="0"
+        style={{ display: "none", visibility: "hidden" }}
+      />
+    </noscript>
 
-        {children}
-      </body>
-    </html>
+    {/* JSON-LD SEO */}
+    <Script
+      id="json-ld"
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+
+    {/* Google Tag Manager */}
+    <Script id="gtm" strategy="afterInteractive">
+      {`
+        (function(w,d,s,l,i){w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id=GTM-KRVF98MH'+dl;
+        f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KRVF98MH');
+      `}
+    </Script>
+
+    {children}
+
+  </body>
+</html>
   );
 }
