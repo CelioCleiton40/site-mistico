@@ -101,7 +101,7 @@ const jsonLd = {
     "longitude": -46.633308
   },
   "url": "https://escudodoamor.com.br",
-  "telephone": "+5519994451358",
+  "telephone": "+5511997799020",
   "priceRange": "$$",
   "openingHoursSpecification": [
     {
