@@ -3,7 +3,7 @@ import React from 'react';
 import { Star } from 'lucide-react';
 
 export const About = () => {
-    const whatsappLink = "https://wa.link/86hf6m";
+    const whatsappLink = "https://wa.link/8y6106";
 
     return (
         <section className="py-24 bg-[#0a0510] relative overflow-hidden">
