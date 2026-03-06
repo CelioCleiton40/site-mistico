@@ -4,7 +4,7 @@ import { WhatsAppIcon } from '../ui/WhatsAppIcon';
 
 export const Header = () => {
     const [scrolled, setScrolled] = useState(false);
-    const whatsappLink = "https://wa.link/86hf6m";
+    const whatsappLink = "https://wa.link/8y6106";
 
     // Efeito de scroll para a navbar
     useEffect(() => {
