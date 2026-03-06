@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 
 export const LoveUnion = () => {
-    const whatsappLink = "https://wa.link/86hf6m";
+    const whatsappLink = "https://wa.link/8y6106";
     const videoRef = useRef<HTMLVideoElement>(null);
     const [isPlaying, setIsPlaying] = useState(false);
 
