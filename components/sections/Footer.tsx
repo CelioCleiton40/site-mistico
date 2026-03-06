@@ -24,7 +24,7 @@ export const Footer = () => {
 
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 font-body">
                     <div className="flex flex-col items-center md:items-start gap-2">
-                        <p>&copy; 2025 Medium Vitória Prado. Todos os direitos reservados.</p>
+                        <p>&copy; 2026 Medium Vitória Prado. Todos os direitos reservados.</p>
                         <p> Desenvolvido pela{" "} <a href="https://wa.me/5584998442522" target="_blank" rel="noopener noreferrer" className="text-[#d4af37] hover:underline" > Sales Digital </a> </p>
                     </div>
                 </div>
