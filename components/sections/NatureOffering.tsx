@@ -3,7 +3,7 @@ import React from 'react';
 import { Star, Flame, Moon, Leaf } from 'lucide-react';
 
 export const NatureOffering = () => {
-    const whatsappLink = "https://wa.link/86hf6m";
+    const whatsappLink = "https://wa.link/8y6106";
 
     return (
         <section className="py-24 bg-[#0d0714] relative overflow-hidden border-t border-[#d4af37]/20">
